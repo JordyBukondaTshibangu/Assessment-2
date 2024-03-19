@@ -12,15 +12,12 @@
 
 - Download all the files
 - Ensure you have these folder structure : 
-    -- assets
-            -- fontawesome
-            -- images
-    -- minify
-            - index.minify.css
-            - index.minify.js
-    -- index.css
-    -- index.html
-    -- index.js
+
+    - assets(fontawesome, images)
+    - minify (index.minify.css, index.minify.js)
+    - index.css
+    - index.html
+    - index.js
 
 
 - Click on the index.html and it will open in the browser 
