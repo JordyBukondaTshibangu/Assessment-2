@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/fontawesome//css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/fontawesome//css/brands.css" rel="stylesheet" />
+    <link href="./assets/fontawesome//css/solid.css" rel="stylesheet" />
+    <title>Landing Page</title>
+    <!-- <link rel="stylesheet" href="./index.minify.css"> -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+       <div class="logo-container">
+        <img  src="./assets/images/logo.webp" alt="Logo image" class="logo-image"
+            srcset="
+            ./assets/images/logo.webp 320w,
+            ./assets/images/logo.webp 480w,
+            ./assets/images/logo.webp 768w,
+            ./assets/images/logo.webp  1024w"
+            sizes="(max-width: 320px) 280px,
+                    (max-width: 480px) 440px,
+                    (max-width: 768px) 720px,
+                    1000px"
+        >
+       </div>
+      <div class="already-have-account">
+        <span class="hamburger-icon">
+            <i class="fas fa-bars"></i>
+        </span>
+        <button class="btn-login">Login</button>
+      </div>
+    </header>
+    
+    <main>
+        <section class="overlay">
+            <div class="timer-container">
+                <span>
+                    <i class="fas fa-clock"></i>
+                </span>
+                <div id="countdown-timer" class="timer">05:00</div>
+            </div>
+            <div class="multi-steps-container">
+                <div class="register-now">
+                    <h1>Register now</h1>
+                </div>
+                <div class="registration-form step-one">
+                    <h2>How would you like to register</h2>
+                    <button id="register-with-google" class="btn-register btn-google btn-with-icon">
+                        <span>
+                            <i class="fa-brands fa-google"></i>
+                        </span>
+                        <span>
+                            Register with Google
+                        </span>
+                    </button>
+                    or
+                    <button id="register-with-email" class="btn-register btn-with-icon">
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            Continue with email
+                        </span>
+                    </button>
+                </div>
+                <div class="registration-form step-two hidden">
+                    <h2>Select gender</h2>
+                    <div class="choice-container">
+                        <div id="choose-gender-male" class="step-choice">
+                            <span>
+                                <i class="fas fa-male"></i>
+                            </span>
+                            <span>Male</span>
+                        </div>
+                        <div id="choose-gender-female" class="step-choice">
+                            <span>
+                                <i class="fas fa-female"></i></span>
+                            <span>Female</span>
+                        </div>
+                    </div>
+                    <button id="btn-choose-your-gender">Next</button>
+                </div>
+                <div class="registration-form step-three hidden">
+                    <h2>Looking for gender</h2>
+                    <div class="choice-container">
+                        <div id="looking-for-male" class="step-choice">
+                            <span>
+                                <i class="fas fa-male"></i>
+                            </span>
+                            <span>Male</span>
+                        </div>
+                        <div id="looking-for-female" class="step-choice">
+                            <span>
+                                <i class="fas fa-female"></i></span>
+                            <span>Female</span>
+                        </div>
+                    </div>
+                    <button id="btn-choose-gender-looking">Next</button>
+                </div>
+                <div class="registration-form step-four hidden">
+                    <h2>Profile Info</h2>
+                    <div class="profile-info">
+                        <div class="input-group">
+                            <label for="Username">Username:</label>
+                            <input type="text" name="username" id="username">
+                            <div class="error-container">
+                                <span class="error-message username-error hidden">Username must be at least 4 characters long</span>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" max="2004-01-01">                            
+                        </div>
+                    </div>
+                    <button id="btn-profile-info">Next</button>
+                </div>
+                <div class="registration-form step-five hidden">
+                    <h2>Profile Details</h2>
+                    <div class="profile-info">
+                        <div class="input-group">
+                            <label for="Username">Email:</label>
+                            <input type="email" id="email" name="email">
+                            <div class="error-container">
+                                <span class="error-message email-error hidden">Please enter a valid email address</span>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password">                            
+                        </div>
+                    </div>
+                    <button id="btn-profile-details">Next</button>
+                </div>
+                <div class="registration-form step-six hidden">
+                    <div class="welcome-message-container">
+                        <img src="./assets/images/logo.webp" alt="congratulations" loading="lazy"/>
+                    </div>
+                    <div class="tandcs-container">
+                        <input type="checkbox" name="tandcs" id="tandcs">
+                        <span>
+                            I am at least 18 year old and agree with the Terms and Conditions, the use of fictious profiles and the privacy statement.
+                        </span>
+                    </div>
+                    <button id="btn-continue" class="hidden">Continue</button>
+                </div>
+            </div>
+            <div class="steps-container">
+                <div class="step step-level-one current-step">
+                    <h3>1</h3>
+                </div>
+                <div class="step step-level-two">
+                    <h3>2</h3>
+                </div>
+                <div class="step step-level-three">
+                    <h3>3</h3>
+                </div>
+                <div class="step step-level-four">
+                    <h3>4</h3>
+                </div>
+                <div class="step step-level-five">
+                    <h3>5</h3>
+                </div>
+                <div class="step step-level-six">
+                    <h3>6</h3>
+                </div>
+            </div>
+        </section>        
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            You must be at least 18 years old and of legal age in your place of residence to access this website. You must also have independent access to your financial resources. This site contains fictitious profiles, physical contact is not possible with fictitious profiles. Signing up and sending winks is free, sending messages and flirts costs one credit per message/flirt. Further information can be found in the general conditions.
+        </div>
+       <span>
+        Copyright © 2024 Snapdate.fr
+       </span>
+    </footer>
+    <script src="./minify/index.minify.js"></script>
+</body>
+</html>
